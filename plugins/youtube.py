@@ -34,7 +34,7 @@ async def ytdl(_, message):
         await message.reply_text("`உங்க Linkல் எதோ பிழை இருக்கு Bro ... 😔 \nஉதவிக்கு /help ஐ Click செய்யவும்`")
         return
     buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
-    sentm = await message.reply_text("Processing Youtube Url 🔎 🔎 🔎")
+    sentm = await message.reply_text("உங்கள் Link பரிசோதித்த படுகிறது..🔎 🔎 🔎")
     try:
         # Todo add webp image support in thumbnail by default not supported by pyrogram
         # https://www.youtube.com/watch?v=lTTajzrSkCw
